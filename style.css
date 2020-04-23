@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+.box1 {
+    background: lightcyan;
+}
+
+.box2 {
+    background: lightgray;
+}
+
+.box3 {
+    background: lightskyblue;
+}
+
+.main {
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px; */
+    /* grid-template-columns: 30% 40% 30%; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: 400px 200px; */
+    grid-template-rows: 1fr 1fr;
+    /* grid-gap: 20px; */
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
