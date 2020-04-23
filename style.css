@@ -58,3 +58,30 @@ body {
     grid-row: 1/2;
     background: darkblue;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    grid-template-areas: 
+    "g1 g3 g3 "
+    "g1 g2 ."
+    ". g2 ."
+    ;
+}
+
+.gallery1 {
+    grid-area: g1;
+    background: violet;
+}
+
+.gallery2 {
+    grid-area: g2;
+    background: orange;
+}
+
+.gallery3 {
+    grid-area: g3;
+    background: khaki;
+}
